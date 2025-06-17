@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: temp-checker
+    runtime: python
+    buildCommand: ""
+    startCommand: python monitor_temp.py
+    schedule:
+      type: cron
+      value: "* * * * *"
