@@ -4,6 +4,3 @@ services:
     runtime: python
     buildCommand: ""
     startCommand: python monitor_temp.py
-    schedule:
-      type: cron
-      value: "* * * * *"
